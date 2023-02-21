@@ -1,0 +1,29 @@
+*{
+  padding: 0;
+  margin: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body{
+  width: 1925px;
+  height: 3125px;
+  background-color:rgb(4, 25, 57);
+  position: relative;
+}
+
+.header{
+  display: flex;
+  position: absolute;
+  left: 230px;
+}
+.inforimg{
+  display: flex;
+position: absolute;
+left: 250px;  
+width: 200px;
+height: 200px;
+}
+
+
+//.header{}
