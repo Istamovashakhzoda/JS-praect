@@ -6,7 +6,7 @@
 }
 
 body {
-  width: 1125px;
+  width: 1900px;
   height: 1225px;
   background: rgba(0, 0, 0, 0.8);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(.jpg);
@@ -22,7 +22,7 @@ body {
 .inforimg {
   display: flex;
   position: absolute;
-  right: 1110px;
+  right: 1650px;
   top: 25px;
   width: 105px;
   height: 70px;
@@ -42,25 +42,33 @@ body {
   height: 17px;
   align-content: center;
   margin-top: 50px;
-  margin-left: 380px;
+  margin-left: 310px;
+}
+
+.categories :hover {
+  cursor: pointer;
 }
 
 .tab {
   width: 98px;
   height: 1px;
   margin-top: 86px;
-  margin-right: 380px;
+  margin-right: 307px;
 }
 
 .icon {
   display: flex;
-  margin-left: 20px;
+  margin-right: 80px;
 }
 .icon__country img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   margin-top: 45px;
+}
+.icon__country :hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 .icon .ru {
   width: 15px;
@@ -76,11 +84,15 @@ body {
 }
 .icon .vector__img {
   margin-top: 45px;
-  margin-left: 32px;
+  margin-left: 102px;
   display: flex;
   gap: 10px;
   width: 30px;
   height: 30px;
+}
+.icon .vector__img :hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 .data {
@@ -90,6 +102,7 @@ body {
 }
 .data .contact {
   position: absolute;
+  right: 700px;
 }
 .data .about {
   margin: 30px 0;
@@ -98,38 +111,153 @@ body {
   display: flex;
   margin-top: 143px;
   gap: 20px;
+  position: absolute;
+  right: 580px;
+}
+.data .all :hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
 }
 
 .body__infor {
   position: absolute;
-  right: 843px;
+  left: 120px;
   margin-top: 350px;
-  width: 380px;
-  height: 370px;
+  width: 410px;
+  height: 390px;
   display: flex;
-  gap: 30px;
+  gap: 50px;
 }
 
 .body__infor-2 {
   position: absolute;
-  right: 843px;
-  margin-top: 750px;
-  width: 380px;
-  height: 370px;
+  left: 120px;
+  margin-top: 780px;
+  width: 410px;
+  height: 390px;
   display: flex;
-  gap: 30px;
+  gap: 50px;
 }
 
 .numb {
   position: absolute;
-  left: 1170px;
+  right: 360px;
   top: 730px;
 }
 
 .footer {
   position: absolute;
-  top: 1298px;
-  left: 350px;
+  top: 1328px;
+  left: 580px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header {
+    width: 1100px;
+    display: flex;
+  }
+  .inforimg {
+    display: flex;
+    position: absolute;
+    right: 930px;
+    top: 25px;
+    width: 100px;
+    height: 65px;
+  }
+  .inforimg2 img {
+    margin-top: 15px;
+    margin-left: 3px;
+    width: 105px;
+    height: 35px;
+  }
+  .categories {
+    display: flex;
+    gap: 16px;
+    width: 14px;
+    height: 16px;
+    align-content: center;
+    margin-top: 50px;
+    margin-left: 380px;
+  }
+  .tab {
+    width: 98px;
+    height: 1px;
+    margin-top: 86px;
+  }
+  .icon {
+    display: flex;
+    margin-right: 160px;
+  }
+  .icon__country img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 45px;
+  }
+  .icon .ru {
+    width: 15px;
+    height: 17px;
+    margin-top: 50px;
+  }
+  .icon .vec {
+    width: 19px;
+    height: 10px;
+    margin-top: 50px;
+  }
+  .icon .vector__img {
+    margin-top: 45px;
+    margin-left: 2px;
+    display: flex;
+    gap: 5px;
+    width: 30px;
+    height: 30px;
+  }
+  .data {
+    position: absolute;
+    right: 300px;
+    top: 205px;
+  }
+  .data .contact {
+    position: absolute;
+  }
+  .data .about {
+    margin: 30px 0;
+  }
+  .data .all {
+    display: flex;
+    margin-top: 143px;
+    gap: 20px;
+  }
+  .body__infor {
+    position: absolute;
+    right: 780px;
+    margin-top: 350px;
+    width: 320px;
+    height: 340px;
+    display: flex;
+    gap: 30px;
+  }
+  .body__infor-2 {
+    position: absolute;
+    right: 780px;
+    margin-top: 750px;
+    width: 320px;
+    height: 340px;
+    display: flex;
+    gap: 30px;
+  }
+  .numb {
+    position: absolute;
+    left: 1170px;
+    top: 730px;
+    display: none;
+  }
+  .footer {
+    position: absolute;
+    top: 1298px;
+    left: 350px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
