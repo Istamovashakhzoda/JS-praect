@@ -1,3 +1,8 @@
+// $font-face:poppins;
+@font-face {
+  font-family: popins;
+  src: url(./poppins/Poppins/Inter-VariableFont_slnt\,wght.ttf);
+}
 *{
   padding: 0;
   margin: 0;
@@ -96,6 +101,7 @@ height: 30px;
     align-items: center;
     color: white;
     font-size: 42px;
+    font-family:popins;
   }
   .about {
     line-height: 31px;
