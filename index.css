@@ -74,23 +74,26 @@ body {
 }
 
 .data {
-  margin-left: 230px;
+  margin-left: 250px;
   margin-top: 115px;
   align-items: center;
 }
-.data .contact {
+.data__contact {
   align-items: center;
+  color: white;
+  font-size: 42px;
 }
-
-.about {
-  margin: 30px 0;
+.data .about {
+  line-height: 31px;
+  font-size: 22px;
+  margin: 35px 0;
 }
 
 .all {
   display: flex;
+  gap: 130px;
   position: absolute;
-  left: 210px;
-  gap: 30px;
+  left: 247px;
 }
 .all button {
   background-color: rgba(42, 41, 41, 0.8);
@@ -98,18 +101,20 @@ body {
   border-radius: 5px;
   padding: 15px 33px;
   font-size: 19px;
-  gap: 30px;
-}
-.all .all button :hover {
-  cursor: pointer;
-  background-color: white;
-  color: black;
+  margin: 0 13px;
 }
 .all .productbtn {
   border-radius: 5px;
   padding: 15px 33px;
   font-size: 19px;
   background-color: white;
+  margin: 0 12px 0 0;
+}
+
+.all button :hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
 }
 
 .body__infor {
