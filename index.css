@@ -143,7 +143,7 @@ body {
 
 .numb {
   position: absolute;
-  right: 157px;
+  right: 150px;
   top: 830px;
 }
 
@@ -151,6 +151,256 @@ body {
   position: absolute;
   top: 1488px;
   left: 820px;
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    max-width: 1200px;
+  }
+  .header {
+    width: 1100px;
+    display: flex;
+  }
+  .inforimg img {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    width: 35px;
+    height: 50px;
+    margin-left: 123px;
+  }
+  .inforimg2 img {
+    margin-top: 15px;
+    margin-left: 168px;
+    width: 95px;
+    height: 22px;
+  }
+  .categories {
+    position: absolute;
+    left: 420px;
+    top: 0;
+  }
+  .categories img {
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    width: 61px;
+    height: 13px;
+    align-content: center;
+    margin-top: 0;
+    text-align: center;
+  }
+  .icon {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 330px;
+  }
+  .icon__country img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 45px;
+  }
+  .icon .ru img {
+    width: 10px;
+    height: 11px;
+    margin-top: 30px;
+  }
+  .icon .vec {
+    width: 13px;
+    height: 8px;
+    margin-top: 50px;
+  }
+  .icon .vector img {
+    margin-top: 0;
+    margin-left: 2px;
+    display: flex;
+    width: 20px;
+    height: 20px;
+  }
+  .data {
+    position: absolute;
+    top: 75px;
+    margin-left: 120px;
+    width: 850px;
+  }
+  .data .contact {
+    position: absolute;
+  }
+  .data .all {
+    width: 850px;
+    display: flex;
+    position: absolute;
+    left: 0;
+    margin-left: 0;
+  }
+  .body__infor {
+    position: absolute;
+    margin-top: 380px;
+    margin-left: 0;
+    left: 75px;
+    width: 339px;
+    height: 310px;
+    display: flex;
+    gap: 10px;
+  }
+  .body__infor-2 {
+    position: absolute;
+    left: 65px;
+    margin-top: 720px;
+    width: 320px;
+    height: 320px;
+    display: flex;
+    gap: 10px;
+  }
+  .numb {
+    position: absolute;
+    left: 1170px;
+    top: 730px;
+    display: none;
+  }
+  .footer {
+    position: absolute;
+    top: 1208px;
+    left: 420px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  body {
+    max-width: 980px;
+    height: 1650px;
+  }
+  .header {
+    width: 1100px;
+    display: flex;
+  }
+  .inforimg img {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    width: 29px;
+    height: 49px;
+  }
+  .inforimg2 img {
+    margin-top: 15px;
+    width: 90px;
+    height: 20px;
+  }
+  .categories {
+    position: absolute;
+    top: 0;
+  }
+  .categories img {
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    width: 61px;
+    height: 13px;
+    align-content: center;
+    margin-top: 0;
+    text-align: center;
+    margin-left: 0;
+  }
+  .icon {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 190px;
+  }
+  .icon__country img {
+    width: 3px;
+    height: 9px;
+    border-radius: 50%;
+    margin-top: 45px;
+  }
+  .icon .ru img {
+    width: 10px;
+    height: 11px;
+    margin-top: 30px;
+  }
+  .icon .vec {
+    width: 13px;
+    height: 8px;
+    margin-top: 50px;
+  }
+  .icon .vector {
+    margin-right: 515px;
+    margin-left: 0;
+    position: absolute;
+    left: 20px;
+  }
+  .icon .vector img {
+    margin-top: 0;
+    display: flex;
+    width: 20px;
+    height: 20px;
+  }
+  .data {
+    position: absolute;
+    top: 45px;
+    width: 850px;
+    text-align: center;
+  }
+  .data .contact {
+    position: absolute;
+  }
+  .data .all {
+    width: 850px;
+    display: flex;
+    position: absolute;
+    left: 0;
+  }
+  .body__infor img {
+    width: 520px;
+    height: 300px;
+  }
+  .body__infor {
+    grid-template-columns: auto auto;
+    margin-top: 380px;
+    margin-left: 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .body__infor-2 img {
+    width: 520px;
+    height: 300px;
+  }
+  .body__infor-2 {
+    grid-template-columns: auto auto;
+    margin-left: 450px;
+    margin-top: 380px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .numb {
+    position: absolute;
+    left: 1170px;
+    top: 730px;
+    display: none;
+  }
+  .footer {
+    position: absolute;
+    left: 320px;
+    bottom: 0;
+    top: 1500px;
+    background-image: url(./images/Paginator.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    max-width: 768px;
+  }
+  .header {
+    width: 992px;
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
