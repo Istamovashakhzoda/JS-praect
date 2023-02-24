@@ -12,73 +12,72 @@
 body {
   max-width: 1900px;
   margin: 0 auto;
-  background: rgba(0, 0, 0, 0.8);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(.jpg);
+  background-color: #11011E;
   position: relative;
 }
 
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  height: 100px;
+  width: 1960px;
+  margin-left: 0;
 }
-
-.inforimg {
+.header .inforimg {
   display: flex;
   margin-top: 35px;
-  width: 105px;
-  height: 55px;
+  width: 17.92px;
+  height: 44px;
   gap: 13px;
+  margin-left: 182px;
 }
-
-.inforimg2 img {
+.header .inforimg2 img {
   margin-top: 15px;
-  width: 120px;
-  height: 30px;
+  width: 135px;
+  height: 28px;
 }
-
-.categories {
+.header .categories {
   display: flex;
-  gap: 46px;
-  width: 22px;
-  height: 19px;
-  align-content: center;
+  gap: 25px;
+  position: absolute;
+  right: 660px;
+  height: 20px;
   margin-top: 50px;
 }
-
-.icon {
+.header .icon {
   display: flex;
   gap: 10px;
   align-items: center;
   justify-content: space-between;
+  width: 59px;
 }
-.icon__country img {
-  width: 26px;
-  height: 26px;
+.header .icon__country img {
+  width: 23px;
+  height: 22px;
   border-radius: 50%;
   margin-top: 45px;
 }
-.icon .ru img {
-  width: 25px;
-  height: 19px;
+.header .icon .ru img {
+  width: 24px;
+  height: 17px;
   margin-top: 50px;
 }
-.icon .vec {
-  width: 23px;
-  height: 13px;
+.header .icon .vec {
+  width: 20px;
+  height: 14px;
   margin-top: 45px;
 }
-.icon .vector {
+.header .icon .vector {
   margin-top: 45px;
-  margin-left: 45px;
+  margin-left: 85px;
   display: flex;
   gap: 20px;
-  width: 26px;
-  height: 26px;
+  width: 24px;
+  height: 24px;
 }
 
 .data {
-  margin-left: 250px;
+  margin-left: 170px;
   margin-top: 115px;
   align-items: center;
 }
@@ -98,7 +97,7 @@ body {
   display: flex;
   gap: 130px;
   position: absolute;
-  left: 247px;
+  left: 170px;
 }
 .all button {
   background-color: rgba(42, 41, 41, 0.8);
@@ -124,30 +123,34 @@ body {
 
 .body__infor {
   position: absolute;
-  margin-top: 350px;
-  width: 410px;
-  height: 390px;
+  left: 170px;
+  margin-top: 120px;
+  width: 470px;
+  height: 410px;
   display: flex;
-  gap: 50px;
+  gap: 100px;
 }
 
 .body__infor-2 {
   position: absolute;
-  margin-top: 780px;
-  width: 410px;
-  height: 390px;
+  left: 170px;
+  margin-top: 570px;
+  width: 470px;
+  height: 410px;
   display: flex;
-  gap: 50px;
+  gap: 100px;
 }
 
 .numb {
   position: absolute;
-  top: 730px;
+  right: 157px;
+  top: 830px;
 }
 
 .footer {
   position: absolute;
-  top: 1328px;
+  top: 1488px;
+  left: 820px;
 }
 
 /*# sourceMappingURL=index.css.map */
