@@ -10,7 +10,7 @@
 }
 
 body {
-  max-width: 1900px;
+  max-width: 1300px;
   margin: 0 auto;
   background-color: #11011E;
   position: relative;
@@ -19,6 +19,7 @@ body {
 .header {
   display: flex;
   align-items: center;
+  max-width: 1300px;
   height: 100px;
   margin-left: 0;
 }
@@ -35,15 +36,36 @@ body {
   width: 135px;
   height: 28px;
 }
-.header .categories {
+.header .categories ul {
   display: flex;
-  gap: 22px;
-  position: absolute;
-  right: 390px;
-  height: 20px;
-  margin-top: 50px;
+  justify-content: space-between;
+  list-style: none;
 }
-.header .categories :hover {
+.header .categories ul li {
+  list-style: none;
+  display: flex;
+}
+.header .navbar nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+.header .navMenu li a {
+  text-decoration: none;
+  padding: 2px;
+  padding-top: 60px;
+  list-style: none;
+  font-size: 19px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.header .navbar_list li {
+  list-style: none;
+  display: flex;
+}
+.header .navMenu li :hover {
   cursor: pointer;
   color: #0FAE96;
 }
@@ -52,7 +74,7 @@ body {
   gap: 10px;
   align-items: center;
   justify-content: space-between;
-  margin-left: 560px;
+  margin-left: 40px;
 }
 .header .icon__country img {
   width: 20px;
@@ -74,7 +96,7 @@ body {
   margin-top: 45px;
 }
 .header .icon .vector {
-  margin-left: 25px;
+  margin-left: 0;
   margin-top: 45px;
   display: flex;
   gap: 14px;
@@ -162,9 +184,105 @@ body {
   text-align: center;
 }
 
+#closeBtn {
+  display: none;
+}
+
+#openBtn {
+  display: none;
+  margin-left: 0;
+}
+
+#openBtn img {
+  background-color: #11011E;
+  border: 6px solid #11011E;
+}
+
+#openBtn {
+  display: none;
+}
+
+#openBtn button {
+  background-color: #11011E;
+  border: 6px solid #11011E;
+}
+
+@media only screen and (max-width: 1201px) {
+  body {
+    max-width: 1900px;
+  }
+  .header {
+    align-items: center;
+  }
+  #openBtn {
+    display: none;
+  }
+  .inforimg img {
+    display: flex;
+    margin-top: 5px;
+    margin-left: 0;
+    position: absolute;
+    left: 0;
+    margin-left: 63px;
+  }
+  .inforimg2 img {
+    margin-top: 15px;
+    margin-left: 118px;
+  }
+  .data {
+    position: absolute;
+    top: 75px;
+    margin-left: 74px;
+    width: 850px;
+  }
+  .contact {
+    position: absolute;
+  }
+  .all {
+    width: 850px;
+    display: flex;
+    position: absolute;
+    left: 0;
+  }
+  .body__infor {
+    position: absolute;
+    margin-top: 380px;
+    margin-left: 0;
+    left: 75px;
+    width: 339px;
+    height: 310px;
+    display: flex;
+    gap: 10px;
+  }
+  .body__infor-2 {
+    position: absolute;
+    left: 65px;
+    margin-top: 720px;
+    width: 300px;
+    height: 320px;
+    display: flex;
+    gap: 10px;
+  }
+  .numb {
+    position: absolute;
+    left: 1100px;
+    top: 670px;
+    width: 60px;
+    height: 200px;
+  }
+  .footer {
+    position: absolute;
+    top: 350px;
+    margin-left: 410px;
+    bottom: 120px;
+  }
+}
 @media only screen and (max-width: 1200px) {
   body {
     max-width: 1200px;
+  }
+  #openBtn {
+    display: none;
   }
   .header {
     width: 1100px;
@@ -204,7 +322,7 @@ body {
     display: flex;
     position: absolute;
     top: 0;
-    right: 330px;
+    right: 120px;
   }
   .icon__country img {
     width: 20px;
@@ -272,14 +390,17 @@ body {
   }
   .footer {
     position: absolute;
-    top: 1208px;
-    left: 420px;
+    top: 378px;
+    left: 20px;
   }
 }
 @media only screen and (max-width: 992px) {
   body {
     max-width: 980px;
     height: 1650px;
+  }
+  #openBtn {
+    display: none;
   }
   .header {
     width: 1100px;
@@ -297,21 +418,6 @@ body {
     margin-top: 15px;
     width: 90px;
     height: 20px;
-  }
-  .categories {
-    position: absolute;
-    top: 0;
-  }
-  .categories img {
-    display: flex;
-    gap: 2px;
-    justify-content: center;
-    width: 61px;
-    height: 13px;
-    align-content: center;
-    margin-top: 0;
-    text-align: center;
-    margin-left: 0;
   }
   .icon {
     display: flex;
@@ -402,13 +508,263 @@ body {
     background-position: center;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
+  #openBtn {
+    display: none;
+  }
+  .icon {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    right: 65px;
+  }
+  .icon__country img {
+    width: 3px;
+    height: 9px;
+    border-radius: 50%;
+    margin-top: 45px;
+  }
+  .icon .ru img {
+    width: 10px;
+    height: 11px;
+    margin-top: 30px;
+  }
+  .icon .vec {
+    width: 13px;
+    height: 8px;
+    margin-top: 50px;
+  }
+  .icon .vector {
+    margin-right: 5px;
+    position: absolute;
+    left: 80px;
+  }
+  .body__infor img {
+    width: 620px;
+    height: 360px;
+    margin-top: 20px;
+  }
+  .body__infor {
+    grid-template-columns: auto auto;
+    margin-top: 380px;
+    margin-left: 50px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .body__infor-2 img {
+    width: 620px;
+    height: 360px;
+    margin-top: 20px;
+  }
+  .body__infor-2 {
+    grid-template-columns: auto auto;
+    margin-left: 520px;
+    margin-top: 380px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .footer {
+    position: absolute;
+    left: 5px;
+    top: 900px;
+  }
+}
+@media only screen and (max-width: 771px) {
   body {
     max-width: 768px;
+  }
+  #openBtn {
+    display: none;
+    margin-left: 0;
   }
   .header {
     width: 992px;
     display: flex;
+  }
+  .categories li {
+    display: block;
+  }
+  .categories {
+    display: none;
+  }
+  .icon {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .icon .vector {
+    margin-right: 5px;
+    position: absolute;
+    left: 80px;
+  }
+  .body__infor {
+    margin-top: 380px;
+    margin-left: 4px;
+  }
+  .body__infor-2 {
+    margin-left: 450px;
+    margin-top: 380px;
+  }
+  .footer {
+    margin-left: 323px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #openBtn {
+    display: block;
+    width: 25px;
+    height: 20px;
+    margin-top: 0;
+  }
+  #openBtn img {
+    display: block;
+    width: 34px;
+    height: 28px;
+    background-color: #11011E;
+  }
+  .categories li {
+    display: none;
+  }
+  .categories {
+    display: block;
+  }
+  .icon {
+    display: flex;
+    gap: 10px;
+  }
+  .icon__country img {
+    width: 3px;
+    height: 9px;
+    border-radius: 50%;
+    margin-top: 45px;
+    margin-left: 0;
+  }
+  .icon .ru img {
+    width: 10px;
+    height: 11px;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+  .icon .vec {
+    width: 13px;
+    height: 8px;
+    margin-top: 50px;
+  }
+  .icon .vector img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 567px) {
+  body {
+    max-width: 567px;
+  }
+  #openBtn {
+    margin-top: 2px;
+    margin-left: 990px;
+    display: block;
+  }
+  .icon {
+    margin-left: 14px;
+  }
+  .icon__country {
+    margin-left: 520px;
+  }
+  .categories li {
+    display: none;
+  }
+  .body__infor img {
+    width: 990px;
+    height: 560px;
+    margin-top: 45px;
+  }
+  .body__infor {
+    margin-top: 380px;
+    margin-left: 110px;
+  }
+  .body__infor-2 img {
+    width: 990px;
+    height: 560px;
+    margin-top: 45px;
+  }
+  .body__infor-2 {
+    margin-left: 130px;
+    margin-top: 2222px;
+  }
+  .footer {
+    margin-left: 323px;
+    margin-top: 2522px;
+  }
+}
+@media only screen and (max-width: 568px) {
+  #openBtn {
+    margin-top: 32px;
+    margin-left: 123px;
+    display: block;
+  }
+  .categories li {
+    display: none;
+  }
+  .categories {
+    margin-top: 32px;
+    margin-right: 390px;
+    display: block;
+  }
+  .icon {
+    margin-left: 14px;
+  }
+  .icon__country {
+    margin-left: 520px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  #openBtn {
+    margin-top: 12px;
+    margin-left: 143px;
+    display: block;
+  }
+  .inforimg img {
+    position: absolute;
+    left: 111px;
+    top: 25px;
+  }
+  .icon {
+    margin-left: 14px;
+  }
+  .icon__country {
+    margin-left: 520px;
+  }
+}
+@media only screen and (max-width: 390px) {
+  #openBtn {
+    margin-top: 12px;
+    margin-right: 293px;
+    display: block;
+  }
+  .inforimg img {
+    position: absolute;
+    left: 111px;
+    top: 25px;
+  }
+  .inforimg2 img {
+    margin-top: 15px;
+  }
+  .icon {
+    position: absolute;
+    left: 2px;
+  }
+  .icon__country img {
+    margin-top: 45px;
+  }
+  .icon .ru img {
+    margin-top: 30px;
+  }
+  .icon .vec {
+    margin-top: 50px;
   }
 }
 

@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "JS-praect",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "JS-praect"
+	}
+}
