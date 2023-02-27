@@ -58,7 +58,7 @@ height: 28px;
 
 .navMenu li a{
   text-decoration: none;
-  padding: 2px;
+  padding: 22px;
   padding-top: 60px;
   list-style: none;
   font-size: 19px;
@@ -201,6 +201,7 @@ height: 28px;
 .footer{
 padding-top: 850px;  
 text-align: center;
+padding-bottom: 99px;
 }
 #closeBtn{
   display: none;
@@ -437,7 +438,6 @@ border: 6px solid #11011E;
 
   #openBtn{
     display:none;
-    
   }
 
   .header{
@@ -448,48 +448,35 @@ border: 6px solid #11011E;
     display: flex; 
     position: absolute;
     left: 0;
-    top: 25px;
+    top: 45px;
     width: 29px;
     height: 49px;
   }
   .inforimg2 img {
   margin-top: 15px;
-  width: 90px;
-  height: 20px;
   }
-
+.navbar_list{
+  margin-top: 0;
+}
   .icon{
     display: flex;
    position: absolute;
-   top: 0;
-   right: 190px;
+   top: 12px;
+   right: 16px;
     &__country img{
-      width:3px;
-      height: 9px;
-      border-radius: 50%;
       margin-top: 45px;
     }
     .ru img{
-      width: 10px;
-    height: 11px;
     margin-top: 30px;
     }
     .vec {
-      width: 13px;
-      height: 8px;
       margin-top: 50px;
     }
     .vector{
-      margin-right: 515px;
+      margin-right: 15px;
       margin-left: 0;
       position: absolute;
-      left: 20px;
-    }
-    .vector img{
-      margin-top: 0;
-     display: flex;
-     width: 20px;
-     height: 20px;
+      left: 120px;
     }
   }
   .data{
@@ -503,10 +490,8 @@ border: 6px solid #11011E;
     }
 
     .all  {
-      width: 850px;
-      display: flex;
      position: absolute;
-  left: 0;
+     left: 0;
     }
   }
   .body__infor img{
@@ -517,8 +502,6 @@ border: 6px solid #11011E;
     grid-template-columns: auto auto;
     margin-top: 380px;
     margin-left: 0;
-    display: flex;
-    gap: 10px;
     flex-wrap: wrap;
   }
   .body__infor-2 img{
@@ -541,9 +524,11 @@ border: 6px solid #11011E;
   }
   .footer{
     position: absolute;
-    left: 320px;
+    // left: 20px;
     bottom: 0;
-    top: 1500px;
+    top: 600px;
+    text-align: center;
+    margin-left: 260px;
     background-image:url(./images/Paginator.png);
     background-repeat: no-repeat;
     background-position:center;
@@ -561,8 +546,8 @@ border: 6px solid #11011E;
     display: flex;
     gap: 10px;
    position: absolute;
-   top: 0;
-   right: 65px;
+   top: 12px;
+   right: 40px;
     &__country img{
       width:3px;
       height: 9px;
@@ -613,8 +598,9 @@ border: 6px solid #11011E;
   }
   .footer{
     position: absolute;
-    left: 5px;
-    top: 900px;
+    left: 92px;
+    top: 890px;
+    padding-bottom: 99px;
   }
 }
 
@@ -637,20 +623,24 @@ border: 6px solid #11011E;
     display: block;
   }
   .categories{
-    display: none;
+    display: block;
+    padding: 2px;
+    margin-top: 0;
+    left: 310px;
   }
 
   .icon{
     display: flex;
     gap: 10px;
     position: absolute;
-    top: 0;
-    right:0;
+    top: 13px;
+    margin-right: 0;
+    right: 0;
     
     .vector{
       margin-right: 5px;
       position: absolute;
-      left: 80px;
+      left: 195px;
     }
   }
 
