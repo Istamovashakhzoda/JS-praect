@@ -175,7 +175,7 @@ body {
 
 .numb {
   position: absolute;
-  right: 70px;
+  right: 0;
   top: 750px;
 }
 
@@ -602,18 +602,18 @@ body {
     margin-top: 380px;
   }
   .footer {
-    margin-left: 323px;
+    margin-left: 223px;
   }
 }
 @media only screen and (max-width: 700px) {
   #openBtn {
-    display: block;
+    display: none;
     width: 25px;
     height: 20px;
     margin-top: 0;
   }
   #openBtn img {
-    display: block;
+    display: none;
     width: 34px;
     height: 28px;
     background-color: #11011E;
@@ -647,7 +647,7 @@ body {
     margin-top: 50px;
   }
   .icon .vector img {
-    display: none;
+    display: block;
   }
 }
 @media only screen and (max-width: 567px) {
@@ -656,17 +656,27 @@ body {
   }
   #openBtn {
     margin-top: 2px;
-    margin-left: 990px;
+    margin-left: 10px;
     display: block;
   }
+  .inforimg img {
+    padding-top: 2px;
+  }
+  .inforimg2 img {
+    padding-top: 3px;
+  }
   .icon {
-    margin-left: 14px;
-  }
-  .icon__country {
-    margin-left: 520px;
-  }
-  .categories li {
     display: none;
+    padding-top: -22%;
+  }
+  .icon__country img {
+    padding-left: 2px;
+  }
+  .vec {
+    padding-left: 22px;
+  }
+  .ru img {
+    padding-left: 22px;
   }
   .body__infor img {
     width: 990px;
