@@ -22,15 +22,15 @@ body{
   align-items: center;
   max-width: 1300px;
   height: 100px;
-  margin-left: 0;
-
+  padding-right: 104px;
+  
   .inforimg{
   display: flex; 
-  margin-top: 35px;
+  margin-top: 25px;
   width: 17.92px;
   height: 44px;
   gap: 13px;
-  margin-left: 182px;
+  margin-left: 92px;
 }
 
 .inforimg2 img {
@@ -49,6 +49,7 @@ height: 28px;
   list-style: none;
   display: flex;
 }
+
 .navbar nav ul{
   list-style: none;
   display: flex;
@@ -71,42 +72,48 @@ height: 28px;
   list-style: none;
   display: flex;
 }
+
+
 .navMenu li :hover{
   cursor: pointer;
   color: #0FAE96;
 }
 
-// #openBtn{
-//   display:none;
-//   margin-left: 0;
-// }
-// #openBtn img {
-// background-color: #11011E;
-// border: 6px solid #11011E;
-// //display: none;
-// }
+#openBtn{
+  display:none;
+  margin-left: 0;
+}
+
+#openBtn img {
+background-color: #11011E;
+border: 6px solid #11011E;
+//display: none;
+}
 
 .icon{
   display: flex;
   gap: 10px;
   align-items: center;
   justify-content: space-between;
-  margin-left: 40px;
+  margin-left: 10px;
   &__country img{
     width:20px;
     height: 23px;
     border-radius: 50%;
     margin-top: 45px;
   }
+
   &__country :hover{
     transform: scale(1.2);
   }
+
   .ru img {
     width: 20px;
   height: 16px;
   margin-top: 50px;
   
   }
+
   .vec{
     width: 15px;
     height: 12px;
@@ -121,6 +128,7 @@ height: 28px;
    width: 24px;
    height: 24px;
   }
+
   .vector :hover{
     transform: scale(1.2);
   }
@@ -129,15 +137,17 @@ height: 28px;
 }
 
 .data{
-  margin-left: 170px;
+  margin-left: 90px;
  margin-top:115px;
   align-items: center;
+  
   &__contact {
     align-items: center;
     color: white;
     font-size: 42px;
     font-family:popins;
   }
+
   .about {
     line-height: 31px;
     font-size: 22px;
@@ -149,7 +159,7 @@ height: 28px;
     display: flex;
     gap: 130px;
   position: absolute;
-  left: 170px;
+  left: 90px;
  
    button{
     background-color: #2a2929cc;
@@ -169,6 +179,7 @@ height: 28px;
     color: black;
     }
   }
+
   .all button:hover{
     cursor: pointer;
     background-color: white;
@@ -177,47 +188,57 @@ height: 28px;
   ///----------------------------------------------------------------------------------------
   .body__infor{
     position: absolute;
-   left: 170px;
+   left: 90px;
     margin-top: 120px;
     width: 370px;
     height: 310px;
     display: flex;
     gap: 30px;
   }
+
   .body__infor-2{
     position: absolute;
-    left:170px;
-    margin-top: 480px;
+    left:90px;
+    margin-top: 460px;
     width: 370px;
     height: 310px;
     display: flex;
     gap: 30px;
   }
-.numb{
+
+.numb img{
   position: absolute;
-  right:0;
-  top: 750px;
+  right: 66px;
+  margin-top: 350px;
+  width: 50px;
+  height: 260px;
 }
+
 .footer{
-padding-top: 850px;  
+padding-top: 870px;  
 text-align: center;
-padding-bottom: 99px;
+padding-bottom: 49px;
 }
+
 #closeBtn{
   display: none;
 }
+
 #openBtn{
   display:none;
   margin-left: 0;
 }
+
 #openBtn img {
 background-color: #11011E;
 border: 6px solid #11011E;
 //display: none;
 }
+
 #openBtn{
   display: none;
 }
+
 #openBtn button{
   background-color: #11011E;
 border: 6px solid #11011E;
@@ -228,12 +249,15 @@ border: 6px solid #11011E;
   body{
     max-width: 1900px;
   }
+
   .header{
     align-items: center;
   }
+
   #openBtn{
     display:none;
   }
+
   .inforimg img{
     display: flex; 
     margin-top: 5px;
@@ -242,18 +266,20 @@ border: 6px solid #11011E;
     left: 0;
     margin-left: 63px;
   }
+
   .inforimg2 img {
   margin-top: 15px;
   margin-left: 118px;
   }
   
   
-    .data{
+     .data{
       position: absolute;
       top: 75px;
       margin-left: 74px;
       width: 850px;
     }
+
     .contact{
       position: absolute;
     }
@@ -276,6 +302,7 @@ border: 6px solid #11011E;
     display: flex;
     gap: 10px;
   }
+
   .body__infor-2{
     position: absolute;
     left: 65px;
@@ -286,6 +313,7 @@ border: 6px solid #11011E;
     display: flex;
     gap: 10px;
   }
+
   .numb{
     position: absolute;
     left: 1100px;
@@ -294,6 +322,7 @@ border: 6px solid #11011E;
     height: 200px;
     //display: none;
   }
+
   .footer{
     position: absolute;
     top: 350px;
@@ -305,15 +334,17 @@ border: 6px solid #11011E;
 @media only screen and (max-width:1200px) {
   body{
     max-width: 1200px;
-   
   }
+
   #openBtn{
     display:none;
   }
+
   .header{
     width: 1100px;
     display: flex;
   }
+
   .inforimg img{
     display: flex; 
     position: absolute;
@@ -323,17 +354,20 @@ border: 6px solid #11011E;
     height: 50px;
     margin-left: 123px;
   }
+
   .inforimg2 img {
   margin-top: 15px;
   margin-left: 168px;
   width: 95px;
   height: 22px;
   }
+
   .categories{
     position: absolute;
     left: 420px;
     top: 0;
   }
+
   .categories img {
     display: flex;
     gap: 2px;
@@ -350,17 +384,20 @@ border: 6px solid #11011E;
    position: absolute;
    top: 0;
    right: 120px;
+
     &__country img{
       width:20px;
       height: 20px;
       border-radius: 50%;
       margin-top: 45px;
     }
+
     .ru img{
       width: 10px;
     height: 11px;
     margin-top: 30px;
     }
+
     .vec {
       width: 13px;
       height: 8px;
@@ -371,11 +408,11 @@ border: 6px solid #11011E;
       margin-top: 0;
       margin-left: 2px;
      display: flex;
-     
      width: 20px;
      height: 20px;
     }
   }
+
   .data{
     position: absolute;
     top: 75px;
@@ -394,6 +431,7 @@ border: 6px solid #11011E;
      margin-left:0;
     }
   }
+
   .body__infor{
     position: absolute;
     // right: 780px;
@@ -405,6 +443,7 @@ border: 6px solid #11011E;
     display: flex;
     gap: 10px;
   }
+
   .body__infor-2{
     position: absolute;
     left: 65px;
@@ -415,12 +454,14 @@ border: 6px solid #11011E;
     display: flex;
     gap: 10px;
   }
+
   .numb{
     position: absolute;
     left: 1170px;
     top: 730px;
     display: none;
   }
+
   .footer{
     position: absolute;
     top: 378px;
@@ -444,6 +485,7 @@ border: 6px solid #11011E;
     width: 1100px;
     display: flex;
   }
+
   .inforimg img{
     display: flex; 
     position: absolute;
@@ -452,12 +494,15 @@ border: 6px solid #11011E;
     width: 29px;
     height: 49px;
   }
+
   .inforimg2 img {
   margin-top: 15px;
   }
+
 .navbar_list{
   margin-top: 0;
 }
+
   .icon{
     display: flex;
    position: absolute;
@@ -466,12 +511,15 @@ border: 6px solid #11011E;
     &__country img{
       margin-top: 45px;
     }
+
     .ru img{
     margin-top: 30px;
     }
+
     .vec {
       margin-top: 50px;
     }
+
     .vector{
       margin-right: 15px;
       margin-left: 0;
@@ -479,12 +527,14 @@ border: 6px solid #11011E;
       left: 120px;
     }
   }
+
   .data{
     position: absolute;
     top: 45px;
     //margin-left: 100px;
     width: 850px;
     text-align: center;
+    
     .contact{
       position: absolute;
     }
@@ -494,20 +544,24 @@ border: 6px solid #11011E;
      left: 0;
     }
   }
+
   .body__infor img{
     width: 520px;
     height: 300px;
   }
+
   .body__infor{
     grid-template-columns: auto auto;
     margin-top: 380px;
     margin-left: 0;
     flex-wrap: wrap;
   }
+
   .body__infor-2 img{
     width: 520px;
     height: 300px;
   }
+
   .body__infor-2{
     grid-template-columns: auto auto;
    margin-left: 450px;
@@ -516,12 +570,14 @@ border: 6px solid #11011E;
     gap: 10px;
     flex-wrap: wrap;
   }
+
   .numb{
     position: absolute;
     left: 1170px;
     top: 730px;
     display: none;
   }
+
   .footer{
     position: absolute;
     // left: 20px;
@@ -656,8 +712,6 @@ border: 6px solid #11011E;
 
   .footer{
   margin-left: 223px;
-
-  //  text-align: center;
   }
 }
 
@@ -688,7 +742,7 @@ border: 6px solid #11011E;
   .icon{
     display: flex;
     gap: 10px;
-   //margin-right: 160px;
+  
     &__country img{
       width:3px;
       height: 9px;
@@ -712,7 +766,33 @@ border: 6px solid #11011E;
     }
   }
 }
+@media only screen and (max-width:907px) {
+  body{
+  max-width: 907px;
+  }
 
+.navbar_list a{
+  margin-left: 0;
+  padding-right: 530px;
+}
+
+ .icon{
+  margin-right: 0;
+  position: absolute;
+  right: 0;
+ }
+
+ .country{
+  margin-right: 0;
+  position: absolute;
+  right: 0;
+ }
+
+ .vector{
+  margin-right: 0;
+  padding-right: 0;
+ }
+}
 @media only screen and ( max-width:567px ) {
   body{
     max-width: 567px;
@@ -723,28 +803,38 @@ border: 6px solid #11011E;
     margin-left:10px;
     display: block;
   }
-
- .inforimg img{
- padding-top: 2px;
- }
-
-.inforimg2 img{
-  padding-top: 3px;
+.categories{
+  display: none;
 }
+
+
+//  .inforimg img{
+//  padding-top: 2px;
+//  }
+
+// .inforimg2 img{
+//   padding-top: 3px;
+// }
 
   .icon{
     display: none;
   padding-top: -22%;
+
+&__country{
+  margin-right: 0;
+  position: absolute;
+  
 }
-.icon__country img{
-  padding-left: 2px;
 }
-  .vec{
-  padding-left: 22px;
-  }
-  .ru img{
-    padding-left: 22px;
-  }
+// .icon__country img{
+//   padding-left: 2px;
+// }
+//   .vec{
+//   padding-left: 22px;
+//   }
+//   .ru img{
+//     padding-left: 22px;
+//   }
 
   .body__infor img{
     width: 990px;

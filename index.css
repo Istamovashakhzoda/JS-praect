@@ -21,15 +21,15 @@ body {
   align-items: center;
   max-width: 1300px;
   height: 100px;
-  margin-left: 0;
+  padding-right: 104px;
 }
 .header .inforimg {
   display: flex;
-  margin-top: 35px;
+  margin-top: 25px;
   width: 17.92px;
   height: 44px;
   gap: 13px;
-  margin-left: 182px;
+  margin-left: 92px;
 }
 .header .inforimg2 img {
   margin-top: 15px;
@@ -69,12 +69,20 @@ body {
   cursor: pointer;
   color: #0FAE96;
 }
+.header #openBtn {
+  display: none;
+  margin-left: 0;
+}
+.header #openBtn img {
+  background-color: #11011E;
+  border: 6px solid #11011E;
+}
 .header .icon {
   display: flex;
   gap: 10px;
   align-items: center;
   justify-content: space-between;
-  margin-left: 40px;
+  margin-left: 10px;
 }
 .header .icon__country img {
   width: 20px;
@@ -108,7 +116,7 @@ body {
 }
 
 .data {
-  margin-left: 170px;
+  margin-left: 90px;
   margin-top: 115px;
   align-items: center;
 }
@@ -128,7 +136,7 @@ body {
   display: flex;
   gap: 130px;
   position: absolute;
-  left: 170px;
+  left: 90px;
 }
 .all button {
   background-color: rgba(42, 41, 41, 0.8);
@@ -155,7 +163,7 @@ body {
 
 .body__infor {
   position: absolute;
-  left: 170px;
+  left: 90px;
   margin-top: 120px;
   width: 370px;
   height: 310px;
@@ -165,24 +173,26 @@ body {
 
 .body__infor-2 {
   position: absolute;
-  left: 170px;
-  margin-top: 480px;
+  left: 90px;
+  margin-top: 460px;
   width: 370px;
   height: 310px;
   display: flex;
   gap: 30px;
 }
 
-.numb {
+.numb img {
   position: absolute;
-  right: 0;
-  top: 750px;
+  right: 66px;
+  margin-top: 350px;
+  width: 50px;
+  height: 260px;
 }
 
 .footer {
-  padding-top: 850px;
+  padding-top: 870px;
   text-align: center;
-  padding-bottom: 99px;
+  padding-bottom: 49px;
 }
 
 #closeBtn {
@@ -650,6 +660,29 @@ body {
     display: block;
   }
 }
+@media only screen and (max-width: 907px) {
+  body {
+    max-width: 907px;
+  }
+  .navbar_list a {
+    margin-left: 0;
+    padding-right: 530px;
+  }
+  .icon {
+    margin-right: 0;
+    position: absolute;
+    right: 0;
+  }
+  .country {
+    margin-right: 0;
+    position: absolute;
+    right: 0;
+  }
+  .vector {
+    margin-right: 0;
+    padding-right: 0;
+  }
+}
 @media only screen and (max-width: 567px) {
   body {
     max-width: 567px;
@@ -659,24 +692,16 @@ body {
     margin-left: 10px;
     display: block;
   }
-  .inforimg img {
-    padding-top: 2px;
-  }
-  .inforimg2 img {
-    padding-top: 3px;
+  .categories {
+    display: none;
   }
   .icon {
     display: none;
     padding-top: -22%;
   }
-  .icon__country img {
-    padding-left: 2px;
-  }
-  .vec {
-    padding-left: 22px;
-  }
-  .ru img {
-    padding-left: 22px;
+  .icon__country {
+    margin-right: 0;
+    position: absolute;
   }
   .body__infor img {
     width: 990px;
