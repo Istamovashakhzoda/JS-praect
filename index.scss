@@ -84,11 +84,11 @@ height: 28px;
   margin-left: 0;
 }
 
-// #openBtn img {
-// background-color: #11011E;
-// border: 6px solid #11011E;
-// //display: none;
-// }
+#openBtn img {
+background-color: #11011E;
+border: 6px solid #11011E;
+//display: none;
+}
 
 .icon{
   display: flex;
@@ -186,15 +186,15 @@ height: 28px;
     color: black;
   }
   ///----------------------------------------------------------------------------------------
-  .body__infor{
-    position: absolute;
-   left: 90px;
-    margin-top: 120px;
-    width: 370px;
-    height: 310px;
-    display: flex;
-    gap: 30px;
-  }
+  // .body__infor{
+  //   position: absolute;
+  //  left: 90px;
+  //   margin-top: 120px;
+  //   width: 370px;
+  //   height: 310px;
+  //   display: flex;
+  //   gap: 30px;
+  // }
 
   .body__infor-2{
     position: absolute;
