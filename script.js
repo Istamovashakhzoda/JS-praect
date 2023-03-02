@@ -1,81 +1,41 @@
 "use script"
 
-let navMenu =document.getElementsByClassName(".navMenu");
-let closeBtn=document.getElementById("#closeBtn");
-let openBtn=document.getElementById("#openBtn");
+let mainleft =document.querySelector(".main-left");
+let navMenu=document.querySelector(".navMenu");
+let back = document.querySelector(".back")
+let openBtn = document.getElementById(".openBtn");
+let closeBtn = document.getElementById(".closebtn")
 
+let openMenuBtn = function (){
+  back.style.display = "block"
+};
 
-openBtn.addEventListener("click", open);
-closeBtn.addEventListener("click", close);
+let closeMenuBtn = function (){
+  back.style.display = "none";
+};
 
-function open() {
-  navMenu.style.display="block";
-  navMenu.style.top=0;
-}
-
-function close(){
-  navMenu.style.top= "-100px";
-}
-
-
-
+openBtn.addEventListener("click", openMenuBtn);
+closeBtn.addEventListener("click",closeMenuBtn)
 
 
 
+// let mainTitle = document.querySelector(".main__left--title");
+// let mainDesc = document.querySelector(".main__left--desc");
+// let mainMore = document.querySelector(".main__more");
+
+// let mainRight = document.querySelector(".main__right");
+
+// let openBtn = document.getElementById("main__btn");
+// let closeBtn = document.getElementById("close__btn");
 
 
-// //  openBtn.addEventListener("click", openMenuBtn);
-// //  closeBtn.addEventListener("click",closeMenuBtn);
+// let openMenuBtn = function(){
+//   mainMore.style.display = "block"
+// };
 
-// //  let toogle = false;
+// let closeMenuBtn = function (){
+//   mainMore.style.display = "none"
+// };
 
-// //  let tooglefunc = function () {
-// //   if (toogle) {
-// //     toogle = false;
-// //   }else {
-// //     toogle = true
-// //   }
-// //  };
-
-// //  let toogleBtnFunc = function (){
-// //   tooglefunc();
-
-// //   toogleBtn.style.backgroundcolor = toogle? "olivedrab" : "red";
-// //   infoRight.style.display = toogle ? "none" : "block";
-// //   toogleBtn.textContent = toogle? "open" : "close"
-// //  };
-
-// //  toogleBtn.addEventListener("click",toogleBtnFunc)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const hamburger = document.getElementsByClassName(".hamburger");
-// const navbar__list = document.getElementsByClassName(".navbar-list");
-
-// hamburger.addEventListener("click", function(){
-//   hamburger.classList.toggle("active");
-//   navbar__list.classList.toggle("active")
-// })
+// openBtn.addEventListener("click", openMenuBtn);
+// closeBtn.addEventListener("click",closeMenuBtn)

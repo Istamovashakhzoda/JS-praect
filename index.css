@@ -54,7 +54,7 @@ body {
 .header .navMenu li a {
   text-decoration: none;
   padding: 22px;
-  padding-top: 60px;
+  padding-top: 40px;
   list-style: none;
   font-size: 19px;
   display: flex;
@@ -95,14 +95,6 @@ body {
   cursor: pointer;
   color: #0FAE96;
 }
-.header #openBtn {
-  display: none;
-  margin-left: 0;
-}
-.header #openBtn img {
-  background-color: #11011E;
-  border: 6px solid #11011E;
-}
 .header .icon {
   display: flex;
   gap: 10px;
@@ -114,7 +106,7 @@ body {
   width: 20px;
   height: 23px;
   border-radius: 50%;
-  margin-top: 45px;
+  margin-top: 35px;
 }
 .header .icon__country :hover {
   transform: scale(1.2);
@@ -122,16 +114,16 @@ body {
 .header .icon .ru img {
   width: 20px;
   height: 16px;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 .header .icon .vec {
   width: 15px;
   height: 12px;
-  margin-top: 45px;
+  margin-top: 35px;
 }
 .header .icon .vector {
   margin-left: 0;
-  margin-top: 45px;
+  margin-top: 35px;
   display: flex;
   gap: 14px;
   width: 24px;
@@ -221,30 +213,21 @@ body {
   padding-bottom: 49px;
 }
 
-#closeBtn {
-  display: none;
+.closeBtn {
+  display: block;
 }
 
 #openBtn {
-  display: none;
+  background-color: #11011E;
+  border: 6px solid #11011E;
+  display: block;
   margin-left: 0;
-}
-
-#openBtn img {
-  background-color: #11011E;
-  border: 6px solid #11011E;
-}
-
-#openBtn {
-  display: none;
-}
-
-#openBtn button {
-  background-color: #11011E;
-  border: 6px solid #11011E;
+  width: 40px;
+  height: 30px;
 }
 
 #closebtn {
+  display: block;
   margin: 10px 0;
   font-size: 18.72px;
   padding: 10px 15px;
@@ -253,7 +236,12 @@ body {
   border-radius: 6px;
   border: none;
   cursor: pointer;
-  display: none;
+}
+
+#closebtn img {
+  width: 45px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 @media only screen and (max-width: 1201px) {
@@ -262,9 +250,6 @@ body {
   }
   .header {
     align-items: center;
-  }
-  #openBtn {
-    display: none;
   }
   .inforimg img {
     display: flex;
@@ -329,9 +314,6 @@ body {
 @media only screen and (max-width: 1200px) {
   body {
     max-width: 1200px;
-  }
-  #openBtn {
-    display: none;
   }
   .header {
     width: 1100px;
@@ -448,9 +430,6 @@ body {
     max-width: 980px;
     height: 1650px;
   }
-  #openBtn {
-    display: none;
-  }
   .header {
     width: 1100px;
     display: flex;
@@ -543,9 +522,6 @@ body {
   }
 }
 @media only screen and (max-width: 991px) {
-  #openBtn {
-    display: none;
-  }
   .icon {
     display: flex;
     gap: 10px;
@@ -611,10 +587,6 @@ body {
   body {
     max-width: 768px;
   }
-  #openBtn {
-    display: none;
-    margin-left: 0;
-  }
   .header {
     width: 992px;
     display: flex;
@@ -655,19 +627,19 @@ body {
 }
 @media only screen and (max-width: 700px) {
   #openBtn {
-    display: none;
+    display: block;
     width: 25px;
     height: 20px;
     margin-top: 0;
   }
-  #openBtn img {
-    display: none;
+  #openBtn {
+    display: block;
     width: 34px;
     height: 28px;
     background-color: #11011E;
   }
   .categories li {
-    display: none;
+    display: block;
   }
   .categories {
     display: block;
@@ -727,19 +699,22 @@ body {
   }
   #openBtn {
     display: block;
+    position: absolute;
+    left: 460px;
+    top: 35px;
   }
-  #closebtn {
+  #closebtn button {
     display: block;
   }
   .back {
     display: block;
   }
   .inforimg img {
-    margin-top: 30px;
+    margin-top: 20px;
   }
   .inforimg2 {
     position: absolute;
-    top: 15px;
+    top: 10px;
     left: 0;
   }
   .categories nav {
@@ -791,8 +766,6 @@ body {
 }
 @media only screen and (max-width: 568px) {
   #openBtn {
-    margin-top: 32px;
-    margin-left: 123px;
     display: block;
   }
   .categories li {
