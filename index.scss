@@ -26,7 +26,7 @@ body{
   
   .inforimg{
   display: flex; 
-  margin-top: 25px;
+  margin-top: 15px;
   width: 17.92px;
   height: 44px;
   gap: 13px;
@@ -34,7 +34,7 @@ body{
 }
 
 .inforimg2 img {
-margin-top: 15px;
+margin-top: 10px;
 width: 135px;
 height: 28px;
 }
@@ -54,7 +54,7 @@ height: 28px;
   list-style: none;
   display: flex;
   align-items: center;
-  padding: 20px 0;
+  padding: 97px 0;
 }
 
 .navMenu li a{
@@ -111,14 +111,16 @@ height: 28px;
   color: #0FAE96;
 }
 
-
-
 .icon{
   display: flex;
-  gap: 10px;
+  gap: 3px;
   align-items: center;
-  justify-content: space-between;
-  margin-left: 10px;
+  margin-right: 0;
+  position: absolute;
+  right: 120px;
+  top: 15px;
+  //justify-content: space-between;
+  
 
   &__country img{
     width:20px;
@@ -144,15 +146,16 @@ height: 28px;
   }
 
   .vector {
-    margin-left:0;
+    margin-left:60px;
     margin-top: 35px;
     display: flex;
-    gap: 14px;
+    gap: 10px;
     width: 24px;
     height: 24px;
   }
 
   .vector :hover{
+    cursor: pointer;
     transform: scale(1.2);
   }
   
@@ -160,8 +163,9 @@ height: 28px;
 }
 
 .data{
-  margin-left: 90px;
- margin-top:115px;
+  position: absolute;
+  left: 90px;
+  margin-top:465px;
   align-items: center;
   
   &__contact {
@@ -180,9 +184,10 @@ height: 28px;
 
   .all{
     display: flex;
-    gap: 130px;
+    gap: 110px;
     position: absolute;
-    left: 90px;
+    left:0;
+    margin-left: 0;
  
    button{
     background-color: #2a2929cc;
@@ -195,7 +200,7 @@ height: 28px;
     
     .productbtn{
     border-radius: 5px;
-    padding: 15px 33px;
+    padding: 15px 13px;
     font-size: 19px;
     background-color: white;
     margin: 0 12px 0 0;
@@ -208,11 +213,11 @@ height: 28px;
     background-color: white;
     color: black;
   }
-  ///----------------------------------------------------------------------------------------
+
   .body__infor{
     position: absolute;
-    left: 90px;
-    margin-top: 120px;
+    left: 70px;
+    margin-top: 420px;
     width: 370px;
     height: 310px;
     display: flex;
@@ -221,8 +226,8 @@ height: 28px;
 
   .body__infor-2{
     position: absolute;
-    left:90px;
-    margin-top: 460px;
+    left:70px;
+    margin-top: 760px;
     width: 370px;
     height: 310px;
     display: flex;
@@ -231,48 +236,43 @@ height: 28px;
 
 .numb img{
   position: absolute;
-  right: 66px;
-  margin-top: 350px;
+  right: 86px;
+  margin-top: 660px;
   width: 50px;
   height: 260px;
 }
 
 .footer{
- padding-top: 870px;  
+  margin-top: 99px;
+ padding-top: 990px;  
  text-align: center;
- padding-bottom: 49px;
+ padding-bottom: 99px;
 }
 
-.closeBtn{
-  display: block;
-}
-
-#openBtn{
-background-color: #11011E;
-border: 6px solid #11011E;
-display: block;
-margin-left: 0;
-width: 40px;
-height: 30px;
-}
-
-#closebtn{
-  display: block;
-  margin: 10px 0;
-  font-size: 18.72px;
-  padding: 10px 15px;
+#openBtn img{
   background-color: #11011E;
-  color: white;
-  border-radius: 6px;
-  border: none;
+  border: 6px solid #11011E;
+  display: none;
+  width: 90px;
+  height: 30px;
+  position: absolute;
+  right: 22px;
+  top: 50px;
   cursor: pointer;
-}
+  }
 
-#closebtn img{
-  width: 45px;
-  height: 40px;
-  border-radius: 50%;
-}
+  .button__links{
+    display: none;
+    // display: flex;
+    // justify-content: space-between;
+  }
+
+  .button__icons {
+    display: none;
+    // display: flex;
+    // justify-content: space-between;
+  }
+  // 
 ///---------------------------------------RESPONSIVE SECTION---------------------------------------------------------------------
 @media only screen and ( max-width:1201px ){
   body{
@@ -732,19 +732,7 @@ height: 30px;
 
 @media only screen and ( max-width:700px ) {
   
-  #openBtn{
-    display: block;
-    width: 25px;
-    height: 20px;
-    margin-top: 0;
-  }
-
-  #openBtn{
-    display:block;
-    width: 34px;
-    height: 28px;
-    background-color: #11011E;
-  }
+  
   
 .categories li{
   display: block;
@@ -808,24 +796,23 @@ height: 30px;
   padding-right: 0;
  }
 }
+
 @media only screen and ( max-width:567px ) {
   
   body{
     max-width: 567px;
   }
+   #closebtn img{
+    margin-top:0;
+    margin-left:710px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+   }
 
   #openBtn{
-    display: block;
-    position: absolute;
-    left:460px;
-    top: 35px;
-  }
-
-  #closebtn button{
-    display: block;
-  }
-  
-  .back{
+    width: 60px;
+    height: 70px;
     display: block;
   }
 
@@ -845,23 +832,29 @@ height: 30px;
 
   .icon{
     display: flex;
-    justify-content: space-between;
-    right: 0;
+    // justify-content: space-between;
+    left:5px;
+    position: absolute;
+    top: 0;
+    margin-top: 0;
+    display: block;
 
    &__country{
-   padding-right: 0;
-   margin-top: 0;
-   top: 0;
+    margin-top: 0;
+    display: block;
    }
-
-   .ru{
+    
+   .ru img{
     padding-left: 5px;
     margin-top: 0;
     top: 0;
+    display: block;
    }
-
-  .vector img{
-    display: none;
+  .vec img{
+    display: block;
+  }
+   .vector{
+     display: none;
   }
 }
 
