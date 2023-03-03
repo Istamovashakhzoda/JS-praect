@@ -1,10 +1,7 @@
 "use script"
- 
-
 const openbtn = document.getElementById("openBtn");
 const closebtn = document.getElementById("closebtn");
 const openMenu = document.getElementById("button");
-
 
 let openButton = function(){
   openMenu.style.display = "block"
@@ -17,41 +14,6 @@ let closeButton = function(){
 };
 
 closebtn.addEventListener("click" , closeButton);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 // let mainleft =document.querySelector(".main-left");
@@ -70,8 +32,6 @@ closebtn.addEventListener("click" , closeButton);
 
 // openBtn.addEventListener("click", openMenuBtn);
 // closeBtn.addEventListener("click",closeMenuBtn)
-
-
 
 // // let mainTitle = document.querySelector(".main__left--title");
 // // let mainDesc = document.querySelector(".main__left--desc");

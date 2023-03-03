@@ -248,6 +248,11 @@ height: 28px;
  text-align: center;
  padding-bottom: 99px;
 }
+  #closebtn img{
+    display: none;
+    height: 0.0px;
+    width: 0.0px;
+  }
 
 #openBtn img{
   background-color: #11011E;
@@ -263,16 +268,14 @@ height: 28px;
 
   .button__links{
     display: none;
-    // display: flex;
-    // justify-content: space-between;
   }
 
-  .button__icons {
+  .button__icons{
     display: none;
-    // display: flex;
-    // justify-content: space-between;
   }
   // 
+
+
 ///---------------------------------------RESPONSIVE SECTION---------------------------------------------------------------------
 @media only screen and ( max-width:1201px ){
   body{
@@ -803,10 +806,10 @@ height: 28px;
     max-width: 567px;
   }
    #closebtn img{
-    margin-top:0;
-    margin-left:710px;
-    width: 50px;
-    height: 50px;
+    margin-top:-16%;
+    margin-left:715px;
+    width: 30px;
+    height: 25px;
     border-radius: 50%;
    }
 
@@ -832,16 +835,15 @@ height: 28px;
 
   .icon{
     display: flex;
-    // justify-content: space-between;
     left:5px;
     position: absolute;
     top: 0;
     margin-top: 0;
-    display: block;
+    display: none;
 
    &__country{
-    margin-top: 0;
     display: block;
+    margin-top: -165%;
    }
     
    .ru img{

@@ -219,6 +219,12 @@ body {
   padding-bottom: 99px;
 }
 
+#closebtn img {
+  display: none;
+  height: 0px;
+  width: 0px;
+}
+
 #openBtn img {
   background-color: #11011E;
   border: 6px solid #11011E;
@@ -681,10 +687,10 @@ body {
     max-width: 567px;
   }
   #closebtn img {
-    margin-top: 0;
-    margin-left: 710px;
-    width: 50px;
-    height: 50px;
+    margin-top: -16%;
+    margin-left: 715px;
+    width: 30px;
+    height: 25px;
     border-radius: 50%;
   }
   #openBtn {
@@ -709,11 +715,11 @@ body {
     position: absolute;
     top: 0;
     margin-top: 0;
-    display: block;
+    display: none;
   }
   .icon__country {
-    margin-top: 0;
     display: block;
+    margin-top: -165%;
   }
   .icon .ru img {
     padding-left: 5px;
