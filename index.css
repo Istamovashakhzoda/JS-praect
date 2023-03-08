@@ -698,34 +698,36 @@ body {
     height: 70px;
     display: block;
   }
+  #button__links {
+    display: none;
+  }
+  #button__icons {
+    display: none;
+  }
+  .vector img {
+    display: none;
+  }
   .inforimg img {
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-left: 180px;
   }
   .inforimg2 {
     position: absolute;
-    top: 10px;
-    left: 0;
+    top: 40px;
+    left: 40px;
   }
   .categories nav {
     display: none;
   }
   .icon {
-    display: flex;
-    left: 5px;
-    position: absolute;
-    top: 0;
-    margin-top: 0;
     display: none;
   }
   .icon__country {
-    display: block;
-    margin-top: -165%;
+    margin-top: 0;
   }
   .icon .ru img {
-    padding-left: 5px;
     margin-top: 0;
     top: 0;
-    display: block;
   }
   .icon .vec img {
     display: block;
