@@ -223,24 +223,6 @@ body {
   display: none;
 }
 
-#closebtn img {
-  display: none;
-  height: 0px;
-  width: 0px;
-}
-
-#openBtn img {
-  background-color: #11011E;
-  border: 6px solid #11011E;
-  display: none;
-  width: 90px;
-  height: 30px;
-  position: absolute;
-  right: 22px;
-  top: 50px;
-  cursor: pointer;
-}
-
 .button__links {
   display: none;
 }
@@ -690,23 +672,62 @@ body {
   body {
     max-width: 567px;
   }
+  .inforimg {
+    margin-right: 380px;
+    position: absolute;
+    right: 380px;
+    top: 0;
+  }
+  .vector {
+    top: 16px;
+    position: absolute;
+    left: 0;
+    margin-left: 0;
+  }
+  #openBtn img {
+    position: absolute;
+    left: 500px;
+    top: 90px;
+    margin-left: 500px;
+  }
   .button {
-    display: block;
-  }
-  #closebtn img {
-    width: 30px;
-    height: 25px;
-    border-radius: 50%;
-  }
-  #openBtn {
-    width: 60px;
-    height: 70px;
-  }
-  #button__links {
     display: none;
+    position: absolute;
+    top: 0;
+    width: 186vw;
+    line-height: 44px;
+    font-size: 30px;
+    background-color: #11011E;
+    color: white;
+    z-index: 2;
   }
-  #button__icons {
-    display: none;
+  .button__links {
+    display: grid;
+    grid-template-columns: auto;
+    padding-top: 100px;
+  }
+  .button a {
+    text-decoration: none;
+    color: white;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+  .button a :hover {
+    cursor: pointer;
+    color: #0FAE96;
+  }
+  .button__icons {
+    display: flex;
+    gap: 5px;
+    margin: 70px 210px;
+  }
+  .button__icons img {
+    cursor: pointer;
+    transform: scale(0.9);
+  }
+  .button__icons img {
+    width: 35px;
+    height: 35px;
   }
   .vector img {
     display: none;

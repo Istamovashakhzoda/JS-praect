@@ -253,23 +253,23 @@ height: 28px;
   display: none;
   }
 
-  #closebtn img{
-    display: none;
-    height: 0.0px;
-    width: 0.0px;
-  }
+  // #closebtn img{
+  //   display: none;
+  //   height: 0.0px;
+  //   width: 0.0px;
+  // }
 
-#openBtn img{
-  background-color: #11011E;
-  border: 6px solid #11011E;
-   display: none;
-  width: 90px;
-  height: 30px;
-  position: absolute;
-  right: 22px;
-  top: 50px;
-  cursor: pointer;
-  }
+// #openBtn img{
+//   background-color: #11011E;
+//   border: 6px solid #11011E;
+//    display: none;
+//   width: 90px;
+//   height: 30px;
+//   position: absolute;
+//   right: 22px;
+//   top: 50px;
+//   cursor: pointer;
+//   }
 
   .button__links{
     display: none;
@@ -811,30 +811,77 @@ height: 28px;
     max-width: 567px;
   }
 
-  .button{
-    display: block;
+  .inforimg{
+    margin-right:380px;
+    position: absolute;
+    right:380px;
+    top: 0;
+  }
+ 
+  .vector{
+    top: 16px;
+    position: absolute;
+    left: 0;
+    margin-left: 0;
+
+  }
+//---------------------------------------------------------------------------------------------------
+  
+#openBtn img{
+  position: absolute;
+  left:500px;
+  top: 90px;
+  margin-left:500px;
+}
+
+.button{
+    display: none;
+    position: absolute;
+    top: 0;
+    //left: 0;
+    width:186vw;
+    line-height:44px;
+    font-size: 30px;
+    background-color:#11011E;
+    color: white;
+    z-index:2;
+  
+    &__links{
+      display: grid;
+      grid-template-columns: auto;
+      padding-top: 100px;
+    }
+
+    a{
+      text-decoration: none;
+      color: white;
+      margin: 0 auto;
+      padding-top: 20px;
+    }
+
+    a :hover{
+      cursor: pointer;
+      color: #0FAE96;
+    }
   }
 
-   #closebtn img{
-    // margin-top:-16%;
-    // margin-left:715px;
-    width: 30px;
-    height: 25px;
-    border-radius: 50%;
+  .button__icons{
+    display: flex;
+    gap: 5px;
+    margin: 70px 210px;
+
+
+   img{
+    cursor: pointer;
+    transform: scale(0.9);
    }
 
-  #openBtn{
-    width: 60px;
-    height: 70px;
+    img{
+      width: 35px;
+      height: 35px;
+    }
   }
-  
-  #button__links{
-  display: none;
-  }
-
-  #button__icons{
-    display: none;
-  }
+//--------------------------------------------------------------------------------------------------
    
    .vector img{
     display: none;
